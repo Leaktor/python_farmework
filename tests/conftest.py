@@ -14,9 +14,9 @@ def get_chrome_options():
     options.add_argument('chrome')
     options.add_argument('--start-maximized')
     options.add_argument('--window-size=1920,1080')
-    options.add_argument('--disable-dev-shm-usage')
-    options.add_argument('--no-sandbox')
-    options.add_argument('--headless')
+    # options.add_argument('--disable-dev-shm-usage')
+    # options.add_argument('--no-sandbox')
+    # options.add_argument('--headless')
     options.add_experimental_option("prefs", {
         "download.default_directory": r"C:\Users\xxx\downloads\Test",
         "download.prompt_for_download": False,

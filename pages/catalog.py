@@ -1,6 +1,7 @@
 from pages.base_page import BasePage
 from pages.test_element import TestElement
 
+
 # Этот пейдж создан исключительно для тестирования фрейма. При использовании фрейма этот пейдж нужно удалить
 class Catalog(BasePage):
     def __init__(self, driver):
@@ -14,3 +15,6 @@ class Catalog(BasePage):
         # self.card_selector.scroll_into_center()
         print(self.card_selector.get_locator())
         self.card_selector.scroll_page_before_element_displayed()
+
+    def check_visibility(self):
+        return self.card_selector.element().is_displayed()
